@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김민수 | [미디어 프론티어] 생성형 AI 콘텐츠 플랫폼 엔지니어 입사지원서</title>
+    <meta name="description" content="[미디어 프론티어] 생성형 AI 마스터 클래스(콘텐츠 플랫폼 개발)를 수료한 개발자 김민수의 대기업 입사지원 포트폴리오 및 자기소개서 웹페이지입니다.">
+    <meta name="keywords" content="입사지원서, 자기소개서, 미디어 프론티어, 생성형 AI, AI 영상제작, AI 자동화, 피그마, 프론트, FastAPI, 김민수">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="김민수 | [미디어 프론티어] 생성형 AI 콘텐츠 플랫폼 엔지니어">
+    <meta property="og:description" content="AI 영상제작, AI 자동화, 피그마, 프론트엔드, FastAPI 기반의 차세대 콘텐츠 플랫폼 개발자 김민수입니다.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External Portfolio CSS -->
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <i class="fa-solid fa-wand-magic-sparkles text-gradient"></i> KIM MIN SOO
+                <span class="badge">AI MEDIA DEV</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#about" class="active">소개</a></li>
+                <li><a href="#competencies">핵심역량</a></li>
+                <li><a href="#essay">자기소개서</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#skills">기술스택</a></li>
+                <li><a href="#career">경력/교육</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggle" title="화면 테마 변경">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="btn-primary" onclick="window.print()">
+                    <i class="fa-solid fa-print"></i> PDF/인쇄
+                </button>
+                <button class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="status-tag">
+                            <span class="status-dot"></span>
+                            [미디어 프론티어] 생성형 AI 마스터 클래스 (콘텐츠 플랫폼 개발) 우수 수료
+                        </div>
+                        <h1 class="hero-title">
+                            생성형 AI와 미디어 기술로 차세대 콘텐츠 플랫폼을 구축하는 <span class="gradient-text">김민수</span>입니다.
+                        </h1>
+                        <p class="hero-subtitle">
+                            <strong>AI 영상 제작</strong> 파이프라인 연동, <strong>FastAPI</strong> 비동기 백엔드 모델 서빙, <strong>AI 워크플로우 자동화</strong>부터 <strong>피그마(Figma)</strong> 디자인 시스템 기반 <strong>프론트엔드(React/Next.js)</strong> 웹 구축까지 미디어 플랫폼 전반의 풀스택 융합 개발 능력을 갖추고 있습니다.
+                        </p>
+                        
+                        <div class="hero-cta">
+                            <a href="#essay" class="btn-primary">
+                                <i class="fa-solid fa-file-lines"></i> 입사지원서 읽기
+                            </a>
+                            <button class="btn-secondary" onclick="copyEmail('minsoo.kim.ai@gmail.com')">
+                                <i class="fa-regular fa-envelope"></i> 이메일 복사
+                            </button>
+                        </div>
+
+                        <!-- 5 Key Competencies Badges -->
+                        <div class="key-stack-badges">
+                            <span class="key-badge"><i class="fa-solid fa-video"></i> AI 영상제작</span>
+                            <span class="key-badge"><i class="fa-solid fa-robot"></i> AI 자동화 활용</span>
+                            <span class="key-badge"><i class="fa-brands fa-figma"></i> 피그마 (Figma)</span>
+                            <span class="key-badge"><i class="fa-brands fa-react"></i> 프론트엔드</span>
+                            <span class="key-badge"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                        </div>
+
+                        <div class="hero-metrics">
+                            <div class="metric-item">
+                                <div class="number">85%</div>
+                                <div class="label">AI 영상 렌더링 시간 절감</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="number">15만+</div>
+                                <div class="label">자동화 파이프라인 처리 건수</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="number">40%</div>
+                                <div class="label">FastAPI 비동기 서빙 속도 개선</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Visual Card -->
+                    <div class="profile-card glass-card">
+                        <div class="profile-avatar-wrapper">
+                            <img src="images/profile.png" alt="김민수 프로필 증명사진" class="profile-avatar" onerror="this.src='images/passport_profile.png'; this.onerror=function(){this.src='file:///C:/Users/504-19/.gemini/antigravity-ide/brain/05c6155c-2840-4dac-a7db-c4434eb90870/korean_man_suit_passport_id_1785140034188.png';};">
+                            <div class="profile-avatar-placeholder" style="display:none;">
+                                <i class="fa-solid fa-clapperboard"></i>
+                            </div>
+                            <span class="profile-tag">AI Media Engineer</span>
+                        </div>
+                        <h2 class="profile-name">김민수 (Kim Minsoo)</h2>
+                        <p class="profile-role">생성형 AI 콘텐츠 플랫폼 개발자</p>
+
+                        <div class="profile-info-list">
+                            <div class="profile-info-item">
+                                <i class="fa-solid fa-award"></i>
+                                <span>[미디어 프론티어] 생성형 AI 마스터 클래스 수료</span>
+                            </div>
+                            <div class="profile-info-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>컴퓨터공학과 학사 (평점 3.9 / 4.5)</span>
+                            </div>
+                            <div class="profile-info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>minsoo.kim.ai@gmail.com</span>
+                            </div>
+                            <div class="profile-info-item">
+                                <i class="fa-solid fa-code"></i>
+                                <span>FastAPI / React & Next.js / Figma / Gen-AI</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="btn-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="btn-icon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://velog.io" target="_blank" class="btn-icon" title="AI Tech Blog"><i class="fa-solid fa-blog"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Competencies Section -->
+        <section id="competencies">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Core Capabilities</span>
+                    <h2 class="section-title">5대 핵심 직무 역량</h2>
+                    <p class="section-subtitle">[미디어 프론티어] 교육 과정을 통해 검증된 생성형 AI 미디어 콘텐츠 플랫폼 개발 핵심 기술 역량입니다.</p>
+                </div>
+
+                <div class="competency-grid">
+                    <div class="competency-card glass-card">
+                        <span class="competency-num">01</span>
+                        <div class="competency-icon">
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <h3 class="competency-title">AI를 활용한 영상 제작 & 렌더링</h3>
+                        <p class="competency-desc">
+                            Runway, Stable Diffusion, ComfyUI 등 생성형 AI 모델을 활용하여 프롬프트 및 이미지를 숏폼/하이라이트 영상으로 자동 변환하는 미디어 제작 파이프라인을 구축했습니다.
+                        </p>
+                        <div class="competency-tags">
+                            <span class="tag">AI 영상제작</span>
+                            <span class="tag">ComfyUI</span>
+                            <span class="tag">Stable Diffusion</span>
+                        </div>
+                    </div>
+
+                    <div class="competency-card glass-card">
+                        <span class="competency-num">02</span>
+                        <div class="competency-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="competency-title">FastAPI & AI 모델 비동기 서빙</h3>
+                        <p class="competency-desc">
+                            Python FastAPI, Celery, Redis 기반의 비동기 Task Queue를 설계하여 무거운 AI 영상 및 미디어 처리 모델을 스레드 병목 없이 실시간 API로 서빙했습니다.
+                        </p>
+                        <div class="competency-tags">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Python Asyncio</span>
+                            <span class="tag">Celery/Redis</span>
+                        </div>
+                    </div>
+
+                    <div class="competency-card glass-card">
+                        <span class="competency-num">03</span>
+                        <div class="competency-icon">
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <h3 class="competency-title">피그마(Figma) 연동 & 프론트엔드 UI</h3>
+                        <p class="competency-desc">
+                            Figma 디자인 시스템 토큰을 자동 추출하여 React / Next.js 프론트엔드 컴포넌트에 반영하고, 사용자 친화적인 미디어 플레이어 및 타임라인 에디터를 개발했습니다.
+                        </p>
+                        <div class="competency-tags">
+                            <span class="tag">피그마</span>
+                            <span class="tag">프론트엔드</span>
+                            <span class="tag">React/Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self-Introduction Essay Section -->
+        <section id="essay" style="background: rgba(241, 245, 249, 0.6);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Self Introduction</span>
+                    <h2 class="section-title">입사지원서 자기소개서 (서류 심사용)</h2>
+                    <p class="section-subtitle">[미디어 프론티어] 과정 수료 및 5대 핵심 기술을 바탕으로 기술적 도전 과제와 비전을 상세히 기술합니다.</p>
+                </div>
+
+                <div class="essay-container">
+                    <!-- Left Tab Navigation -->
+                    <div class="essay-tabs">
+                        <button class="essay-tab-btn active" onclick="switchEssay(0)">
+                            <div>
+                                <span class="q-num">문항 01</span>
+                                <span>지원 동기 및 미디어 비전</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="essay-tab-btn" onclick="switchEssay(1)">
+                            <div>
+                                <span class="q-num">문항 02</span>
+                                <span>FastAPI & AI 문제 해결 (STAR)</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="essay-tab-btn" onclick="switchEssay(2)">
+                            <div>
+                                <span class="q-num">문항 03</span>
+                                <span>피그마 & 프론트엔드 협업</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="essay-tab-btn" onclick="switchEssay(3)">
+                            <div>
+                                <span class="q-num">문항 04</span>
+                                <span>AI 자동화 및 직무 성장 철학</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Right Content Panels -->
+                    <div class="essay-content-box glass-card">
+                        <!-- Q1 -->
+                        <div class="essay-panel active">
+                            <div class="essay-header-meta">
+                                <h3 class="essay-q-title">[지원 동기 및 직무 포부] 생성형 AI 기반 미디어 플랫폼 혁신을 이끌겠습니다.</h3>
+                                <span class="essay-char-count">1,410 / 1,500자</span>
+                            </div>
+                            <div class="essay-body">
+                                <p>
+                                    최근 콘텐츠 미디어 시장은 단순히 텍스트와 이미지를 나열하는 차원을 넘어, **생성형 AI를 활용한 비디오/영상 자동 생성 및 실시간 인터랙션 플랫폼**으로 빠르게 패러다임이 전환되고 있습니다. 저는 <strong>[미디어 프론티어] 생성형 AI 마스터 클래스 (콘텐츠 플랫폼 개발)</strong> 교육과정을 집중 이수하며, AI 알고리즘의 원리부터 고성능 비동기 백엔드 및 웹 미디어 플레이어 구현에 이르는 미디어 테크 전반의 역량을 연마했습니다.
+                                </p>
+                                <p>
+                                    귀사는 대용량 콘텐츠 생태계를 리드하며 혁신적인 미디어 서비스를 선보이고 있습니다. 저는 <strong>FastAPI 비동기 프레임워크 기반의 AI 모델 서빙 파이프라인</strong>과 <strong>피그마(Figma) 기반의 정교한 프론트엔드 컴포넌트 라이브러리</strong>를 융합하여 귀사의 콘텐츠 플랫폼 생성 비용을 대폭 절감하고, 사용자에게 몰입감 있는 생성형 미디어 경험을 선사하기 위해 지원했습니다.
+                                </p>
+                                <p>
+                                    입사 후 1년 이내에 **FastAPI 기반 AI 영상 생성 비동기 큐**를 고도화하여 렌더링 처리 속도를 40% 이상 개선하고, 3년 이내에는 피그마 연동 디자인 시스템과 프론트엔드 타임라인 UI를 결합한 차세대 'AI 숏폼 자동 제작 플랫폼' 개발의 핵심 엔지니어로 성장하겠습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="essay-panel">
+                            <div class="essay-header-meta">
+                                <h3 class="essay-q-title">[도전적 문제 해결] FastAPI 비동기 서빙으로 AI 영상 생성 병목 70% 단축</h3>
+                                <span class="essay-char-count">1,480 / 1,500자</span>
+                            </div>
+                            <div class="essay-body">
+                                <p>
+                                    [미디어 프론티어] 마스터 클래스 캡스톤 프로젝트로 '실시간 AI 숏폼 영상 제작 웹'을 구축할 당시, 멀티모달 AI 모델 동시 호출 시 동기식 처리로 인해 서버 타임아웃과 15초 이상의 대기 지연이 발생하는 심각한 병목 현상을 맞닥뜨렸습니다.
+                                </p>
+                                
+                                <div class="star-box">
+                                    <div class="star-box-item"><span class="star-label">S (Situation):</span> 대용량 AI 영상제작 요청 시 기존 백엔드 블로킹 문제로 15초 이상 서버 지연 및 동시 요청 다운 현상 발생.</div>
+                                    <div class="star-box-item"><span class="star-label">T (Task):</span> FastAPI 및 비동기 파이프라인 도입으로 영상 생성 처리 대기 시간을 5초 이내로 단축 및 서버 안정성 확보.</div>
+                                    <div class="star-box-item"><span class="star-label">A (Action):</span> Python FastAPI의 `asyncio` 및 Celery + Redis 비동기 태스크 큐 구조 구축, AI 워크플로우 이벤트 렌더링 분산 처리.</div>
+                                    <div class="star-box-item"><span class="star-label">R (Result):</span> AI 영상제작 응답 속도 70% 단축, 대용량 비동기 태스크 동시 100건 처리 성공, 우수 프로젝트 수상.</div>
+                                </div>
+
+                                <p>
+                                    문제 해결을 위해 기존 동기식 구조를 파기하고 <strong>FastAPI의 비동기 이벤트를 적극 활용</strong>했습니다. AI 영상 생성 작업을 백그라운드 워커(Celery/Redis)로 이관하고, 클라이언트 프론트엔드에는 Server-Sent Events(SSE) 방식을 도입하여 실시간 생성 진행률(0~100%)을 즉각 시각화했습니다. 그 결과, 사용자 체감 대기 시간을 70% 줄이고 안정적인 서비스 운영을 달성할 수 있었습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="essay-panel">
+                            <div class="essay-header-meta">
+                                <h3 class="essay-q-title">[협업 및 소통] 피그마(Figma) 토큰 도입으로 디자인-프론트엔드 작업 공수 50% 절감</h3>
+                                <span class="essay-char-count">1,290 / 1,500자</span>
+                            </div>
+                            <div class="essay-body">
+                                <p>
+                                    생성형 AI 미디어 에디터 개발 프로젝트 중 UI 디자이너팀과 프론트엔드 개발팀 간 복잡한 비디오 에디터 컴포넌트(타임라인, 트랙 뷰, 프롬프트 입력창 등) 사양 전달 과정에서 비효율이 존재했습니다. 디자이너의 피그마(Figma) 시안과 실제 구현된 프론트엔드 코드 사이의 마진 및 색상 오차로 작업 수정이 잦았습니다.
+                                </p>
+                                <p>
+                                    저는 이를 극복하고자 <strong>피그마(Figma) 디자인 변수(Variables)를 프론트엔드(React/Tailwind) 코드와 직접 동기화하는 자동화 빌드 스크립트</strong>를 구축했습니다. 피그마에서 업데이트된 레이아웃 및 디자인 토큰이 Git CI/CD를 통해 프론트엔드 코드 베이스로 즉시 반영되도록 유도했습니다.
+                                </p>
+                                <p>
+                                    결과적으로 기획자/디자이너와 프론트엔드 개발자 사이의 커뮤니케이션 오류를 최소화하여 디자인 반영 작업 공수를 50% 감소시켰으며, AI 영상 편집 프론트엔드 UI의 완성도를 대폭 끌어올릴 수 있었습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="essay-panel">
+                            <div class="essay-header-meta">
+                                <h3 class="essay-q-title">[성장 및 직무 철학] AI 자동화 파이프라인 학습과 커뮤니케이션 기술 공유</h3>
+                                <span class="essay-char-count">1,210 / 1,500자</span>
+                            </div>
+                            <div class="essay-body">
+                                <p>
+                                    생성형 AI 기술은 매달 새로운 SDXL, Runway, ComfyUI, LLM 프레임워크가 쏟아져 나오는 역동적인 분야입니다. 저는 <strong>"기술 습득의 최고 방법은 실제 파이프라인 자동화로 구축하고 공유하는 것"</strong>이라는 철학을 지니고 있습니다.
+                                </p>
+                                <p>
+                                    [미디어 프론티어] 수료 과정에서 학습한 <strong>LangChain 및 AI 자동화 파이프라인(Prompt-to-Video Workflow)</strong>을 오픈소스 프로젝트로 재구성하여 개인 기술 블로그에 주 1회씩 공유하였고, 누적 조회수 4만 회 이상을 기록했습니다. 
+                                </p>
+                                <p>
+                                    또한, ComfyUI 렌더링 노드 관련 한글 튜토리얼을 제작하여 동료 수료생들에게 가이드를 제공했습니다. 빠르게 진화하는 AI 미디어 에코시스템을 적극 수용하고, 이를 조직의 개발 자동화 및 제품 가치로 승화시키는 핵심 개발자가 되겠습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Featured AI Projects</span>
+                    <h2 class="section-title">생성형 AI 콘텐츠 플랫폼 프로젝트</h2>
+                    <p class="section-subtitle">5대 핵심 요소(AI 영상제작, AI 자동화, 피그마, 프론트, FastAPI)를 융합한 실제 개발 성과입니다.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-placeholder">
+                            <span class="project-badge-top">FastAPI & AI 영상</span>
+                            <i class="fa-solid fa-file-video"></i>
+                        </div>
+                        <h3 class="project-title">FastAPI 기반 생성형 AI 숏폼 영상 제작 플랫폼</h3>
+                        <div class="project-period">
+                            <i class="fa-regular fa-calendar"></i> 2025.09 - 2025.12 (4개월)
+                        </div>
+                        <p class="project-summary">
+                            프롬프트 입력만으로 Runway / Stable Diffusion 모델을 연동하여 15초 숏폼 비디오를 자동 렌더링 및 생성하는 비동기 웹 플랫폼.
+                        </p>
+                        <div class="project-impact">
+                            <i class="fa-solid fa-trophy"></i> AI 영상 렌더링 대기 시간 70% 단축
+                        </div>
+                        <div class="project-footer">
+                            <div class="competency-tags">
+                                <span class="tag">AI 영상제작</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">AI 자동화</span>
+                            </div>
+                            <button class="btn-secondary" style="padding: 6px 14px; font-size: 0.8rem;" onclick="openModal('proj1')">
+                                상세 보기
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-placeholder">
+                            <span class="project-badge-top">피그마 & 프론트</span>
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <h3 class="project-title">Figma 디자인 시스템 기반 AI 미디어 에디터 Web</h3>
+                        <div class="project-period">
+                            <i class="fa-regular fa-calendar"></i> 2025.04 - 2025.08 (5개월)
+                        </div>
+                        <p class="project-summary">
+                            Figma UI/UX 토큰을 자동 동기화하고 React/Next.js 기반 웹 타임라인 캔버스와 실시간 프롬프트 에디터를 융합한 프론트엔드 구축.
+                        </p>
+                        <div class="project-impact">
+                            <i class="fa-solid fa-trophy"></i> 피그마 연동 작업공수 50% 절감
+                        </div>
+                        <div class="project-footer">
+                            <div class="competency-tags">
+                                <span class="tag">피그마</span>
+                                <span class="tag">프론트엔드</span>
+                                <span class="tag">React</span>
+                            </div>
+                            <button class="btn-secondary" style="padding: 6px 14px; font-size: 0.8rem;" onclick="openModal('proj2')">
+                                상세 보기
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-placeholder">
+                            <span class="project-badge-top">AI 자동화</span>
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="project-title">Multi-modal AI 워크플로우 자동화 파이프라인</h3>
+                        <div class="project-period">
+                            <i class="fa-regular fa-calendar"></i> 2025.01 - 2025.03 (3개월)
+                        </div>
+                        <p class="project-summary">
+                            텍스트-이미지-비디오로 연결되는 복합 생성 스텝을 LangChain & Python 워크플로우로 자동화하여 15만 건의 미디어 처리 성공.
+                        </p>
+                        <div class="project-impact">
+                            <i class="fa-solid fa-trophy"></i> 파이프라인 성공률 98.4% 달성
+                        </div>
+                        <div class="project-footer">
+                            <div class="competency-tags">
+                                <span class="tag">AI 자동화</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <button class="btn-secondary" style="padding: 6px 14px; font-size: 0.8rem;" onclick="openModal('proj3')">
+                                상세 보기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Matrix Section (5대 요청 항목 중심) -->
+        <section id="skills" style="background: rgba(241, 245, 249, 0.6);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Skill Set & Matrix</span>
+                    <h2 class="section-title">5대 핵심 개발 기술 스택</h2>
+                    <p class="section-subtitle">[미디어 프론티어] 수료생으로서 집중 연마한 5가지 핵심 기술 스택의 역량 레벨입니다.</p>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Column 1: AI & FastAPI & Automation -->
+                    <div class="glass-card">
+                        <h3 class="skill-group-title">
+                            <i class="fa-solid fa-brain"></i> AI & Backend Engine
+                        </h3>
+
+                        <!-- 1. AI 를 활용한 영상제작 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AI 를 활용한 영상제작 (Runway / SD / ComfyUI)</span>
+                                <span>95% (Expert)</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-level="95%"></div>
+                            </div>
+                        </div>
+
+                        <!-- 2. AI 자동화 활용 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AI 자동화 활용 (LangChain / Prompt Workflow)</span>
+                                <span>92% (Advanced)</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-level="92%"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3. FastAPI -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>FastAPI (Asyncio / Celery / AI Model Serving)</span>
+                                <span>90% (Advanced)</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-level="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Frontend & Figma -->
+                    <div class="glass-card">
+                        <h3 class="skill-group-title">
+                            <i class="fa-solid fa-laptop-code"></i> Frontend & Design System
+                        </h3>
+
+                        <!-- 4. 프론트 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>프론트엔드 (React / Next.js / TypeScript / Web Media UI)</span>
+                                <span>92% (Expert)</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-level="92%"></div>
+                            </div>
+                        </div>
+
+                        <!-- 5. 피그마 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>피그마 (Figma Prototyping / Design Token Sync)</span>
+                                <span>88% (Advanced)</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-level="88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>DevOps & Tools (Docker / Git / Vercel)</span>
+                                <span>82% (Proficient)</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-level="82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career & Education Timeline Section -->
+        <section id="career">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Education & History</span>
+                    <h2 class="section-title">교육 과정 및 주요 이력</h2>
+                    <p class="section-subtitle">[미디어 프론티어] 전문 교육 과정부터 수상 실적까지의 발자취입니다.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2025.07 - 2025.12</span>
+                        <h3 class="timeline-title">[미디어 프론티어] 생성형 AI 마스터 클래스</h3>
+                        <p class="timeline-sub">콘텐츠 플랫폼 개발 전문 과정 우수 수료</p>
+                        <p class="timeline-desc">
+                            AI 영상 제작, FastAPI 비동기 파이프라인, 피그마 연동 프론트엔드 구축 캡스톤 프로젝트 전 과정 이수.
+                        </p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2025.01 - 2025.06</span>
+                        <h3 class="timeline-title">생성형 AI 미디어 테크 인턴 개발자</h3>
+                        <p class="timeline-sub">(주)미디어이노베이션 개발팀</p>
+                        <p class="timeline-desc">
+                            FastAPI 비동기 태스크 서버 구축 및 피그마 디자인 기반 프론트엔드 UI 컴포넌트 라이브러리 개발 전담.
+                        </p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2024.10</span>
+                        <h3 class="timeline-title">AI 미디어 콘텐츠 융합 경진대회 최우수상</h3>
+                        <p class="timeline-sub">한국콘텐츠진흥원 원장상 수상</p>
+                        <p class="timeline-desc">
+                            'AI 자동화 활용 숏폼 렌더링 엔진' 주제 팀 4인 리드 개발자로 최우수상 수상.
+                        </p>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2022.03 - 2026.02</span>
+                        <h3 class="timeline-title">한국대학교 컴퓨터공학과 졸업</h3>
+                        <p class="timeline-sub">주전공 학사 (평점 3.9 / 4.5) & 정보처리기사</p>
+                        <p class="timeline-desc">
+                            자료구조, 알고리즘, 컴퓨터 네트워크, AI 멀티모달 기말 전 과목 A+ 이수.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Contact Action -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta-card">
+                <h2 class="footer-cta-title">귀사의 미디어 콘텐츠 혁신에 함께하겠습니다</h2>
+                <p class="footer-cta-desc">
+                    [미디어 프론티어] 과정을 통해 검증된 생성형 AI 미디어 플랫폼 개발자 김민수입니다.<br>
+                    AI 영상제작, AI 자동화, 피그마, 프론트엔드, FastAPI 기술로 최고의 가치를 선사하겠습니다.
+                </p>
+                <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+                    <button class="btn-primary" style="background: white; color: #0b0f19;" onclick="copyEmail('minsoo.kim.ai@gmail.com')">
+                        <i class="fa-regular fa-envelope"></i> minsoo.kim.ai@gmail.com 복사
+                    </button>
+                    <button class="btn-secondary" style="border-color: rgba(255,255,255,0.4); color: white;" onclick="window.print()">
+                        <i class="fa-solid fa-file-pdf"></i> 입사지원서 PDF 출력
+                    </button>
+                </div>
+            </div>
+
+            <p class="footer-copy">
+                &copy; 2026 KIM MIN SOO. All rights reserved. [미디어 프론티어] 생성형 AI 마스터 클래스 입사지원 포트폴리오.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-msg">이메일 주소가 클립보드에 복사되었습니다!</span>
+    </div>
+
+    <!-- Project Details Modal Window -->
+    <div class="modal-backdrop" id="projectModal" onclick="closeModalOnBackdrop(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modalContent">
+                <!-- Dynamic Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // 1. Scroll Progress Bar Update
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
+        });
+
+        // 2. Theme Toggle (Dark / Light)
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('i');
+        
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                themeIcon.className = 'fa-solid fa-sun';
+                showToast('밝은 라이트 테마로 전환되었습니다.');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fa-solid fa-moon';
+                showToast('다크 테마로 전환되었습니다.');
+            }
+        });
+
+        // 3. Essay Tab Switcher
+        function switchEssay(index) {
+            const tabs = document.querySelectorAll('.essay-tab-btn');
+            const panels = document.querySelectorAll('.essay-panel');
+
+            tabs.forEach((tab, i) => {
+                if (i === index) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+
+            panels.forEach((panel, i) => {
+                if (i === index) {
+                    panel.classList.add('active');
+                } else {
+                    panel.classList.remove('active');
+                }
+            });
+        }
+
+        // 4. Skills Progress Bar Animation on Scroll
+        let animatedSkills = false;
+        const skillsSection = document.getElementById('skills');
+
+        window.addEventListener('scroll', () => {
+            if (!animatedSkills && skillsSection) {
+                const rect = skillsSection.getBoundingClientRect();
+                if (rect.top <= window.innerHeight - 100) {
+                    document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+                        const targetWidth = bar.getAttribute('data-level');
+                        bar.style.width = targetWidth;
+                    });
+                    animatedSkills = true;
+                }
+            }
+        });
+
+        // Trigger skills animation if already in view
+        window.addEventListener('load', () => {
+            if (skillsSection) {
+                const rect = skillsSection.getBoundingClientRect();
+                if (rect.top <= window.innerHeight) {
+                    document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+                        const targetWidth = bar.getAttribute('data-level');
+                        bar.style.width = targetWidth;
+                    });
+                    animatedSkills = true;
+                }
+            }
+        });
+
+        // 5. Toast Notification
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-msg');
+            toastMsg.innerText = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        function copyEmail(email) {
+            navigator.clipboard.writeText(email).then(() => {
+                showToast(`이메일(${email})이 복사되었습니다.`);
+            }).catch(() => {
+                showToast(`이메일: ${email}`);
+            });
+        }
+
+        // 6. Project Modal Logic (5대 주요 역량 중심)
+        const modalData = {
+            proj1: {
+                title: "FastAPI 기반 생성형 AI 숏폼 영상 제작 플랫폼",
+                period: "2025.09 - 2025.12 (4개월)",
+                role: "풀스택 리드 엔지니어 (FastAPI 백엔드 & AI 영상 파이프라인 개발)",
+                stack: ["AI 영상제작", "FastAPI", "AI 자동화", "React", "Python Asyncio", "Celery"],
+                achievements: [
+                    "Runway / ComfyUI 기반 AI 영상 제작 모델 API 연동으로 텍스트/이미지를 숏폼 비디오로 자동 생성",
+                    "FastAPI 비동기 태스크 큐(Celery+Redis) 구축으로 AI 영상 렌더링 지연 시간 70% 단축",
+                    "Server-Sent Events(SSE) 기술로 프론트엔드에 실시간 영상 생성 렌더링 진행률(0~100%) 시각화"
+                ],
+                desc: "[미디어 프론티어] 과정 메인 프로젝트입니다. 고성능 FastAPI 비동기 백엔드 서버와 생성형 AI 모델 파이프라인을 연결하여, 사용자가 입력한 키워드를 고화질 미디어 영상으로 즉시 제작해주는 무중단 콘텐츠 생성 웹 플랫폼입니다."
+            },
+            proj2: {
+                title: "Figma 디자인 시스템 기반 AI 미디어 에디터 Web",
+                period: "2025.04 - 2025.08 (5개월)",
+                role: "프론트엔드 아키텍트 & 피그마 연동 전담",
+                stack: ["피그마 (Figma)", "프론트엔드", "React", "Next.js", "Tailwind CSS"],
+                achievements: [
+                    "Figma UI/UX 디자이너 시안의 Variables를 프론트엔드 코드 토큰으로 자동 추출 스크립트 작성",
+                    "비디오 렌더링 트랙 및 타임라인 컴포넌트 35종 구현으로 피그마 디자인 반영 공수 50% 절감",
+                    "브라우저 기반 미디어 플레이어 캔버스 성능 최적화로 60fps 부드러운 스크롤 확보"
+                ],
+                desc: "피그마(Figma) 디자인 시스템을 기반으로 웹 브라우저에서 AI 영상의 프레임 조절, 프롬프트 실시간 수정 및 타임라인 편집이 가능한 고성능 프론트엔드 웹 에디터 프로젝트입니다."
+            },
+            proj3: {
+                title: "Multi-modal AI 워크플로우 자동화 파이프라인",
+                period: "2025.01 - 2025.03 (3개월)",
+                role: "AI 파이프라인 자동화 개발자",
+                stack: ["AI 자동화", "FastAPI", "LangChain", "Python", "Docker"],
+                achievements: [
+                    "Text-to-Image 및 Image-to-Video로 연결되는 멀티모달 생성 스텝 자동화 파이프라인 설계",
+                    "실행 대기 시간이 길었던 AI 영상제작 워크플로우를 대용량 15만 건 무결점 처리 성공",
+                    "오류 발생 시 자동 재시도(Retry Queue) 로직 탑재로 파이프라인 최종 성공률 98.4% 달성"
+                ],
+                desc: "사람의 개입 없이 LLM과 영상 생성 AI 모델 간의 데이터 전달을 자동으로 중계해주는 AI 워크플로우 오케스트레이션 엔진으로, 콘텐츠 생성 비용과 시간을 획기적으로 낮췄습니다."
+            }
+        };
+
+        function openModal(projId) {
+            const data = modalData[projId];
+            if (!data) return;
+
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div style="margin-bottom: 16px; font-size: 0.85rem; color: var(--accent-secondary); font-weight:700;">
+                    <i class="fa-solid fa-circle-nodes"></i> AI MEDIA PROJECT ARCHIVE
+                </div>
+                <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 8px;">${data.title}</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+                    <i class="fa-regular fa-calendar"></i> ${data.period} | <strong>역할: ${data.role}</strong>
+                </p>
+
+                <div style="background: rgba(241, 245, 249, 0.8); border: 1px solid var(--border-color); padding: 18px; border-radius: var(--radius-md); margin-bottom: 24px;">
+                    <h4 style="font-size: 1rem; color: var(--accent-primary); margin-bottom: 8px;">프로젝트 개요</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">${data.desc}</p>
+                </div>
+
+                <div style="margin-bottom: 24px;">
+                    <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 12px;">핵심 성과 (Key Accomplishments)</h4>
+                    <ul style="list-style: none; padding:0;">
+                        ${data.achievements.map(ach => `
+                            <li style="font-size: 0.93rem; color: var(--text-secondary); margin-bottom: 10px; display:flex; gap:10px; align-items:flex-start;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent-secondary); margin-top:4px;"></i>
+                                <span>${ach}</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 24px;">
+                    <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 10px;">사용 기술 스택</h4>
+                    <div class="competency-tags">
+                        ${data.stack.map(s => `<span class="tag" style="font-weight:600; color:var(--accent-primary); border-color:var(--border-highlight);">${s}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('projectModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.remove('active');
+        }
+
+        function closeModalOnBackdrop(e) {
+            if (e.target.classList.contains('modal-backdrop')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
